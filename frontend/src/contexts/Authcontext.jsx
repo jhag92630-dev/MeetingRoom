@@ -6,7 +6,7 @@ import {StatusCodes} from 'http-status-codes';
 import { useNavigate } from "react-router-dom";
 export const AuthContext=createContext({});
 const client=axios.create({
-    baseURL:"http://localhost:8080/users"
+    baseURL:"https://meetingroombackend.onrender.com/users"
 });
 
 export const AuthProvider=({ children })=>{
