@@ -1,15 +1,22 @@
 import React from 'react';
 import "../App.css"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'
 export default function landing(){
+    const router=useNavigate();
     return(
         <div className='landingContainer'>
             <nav class="navbar">
   <div class="logo">MeetingRoom</div>
   <ul class="nav-links">
-    <li><a href="/meet/guest">connect as Guest</a></li>
-    <li><a href="/auth">Register</a></li>
-    <li><a href="/auth">Login</a></li>
+    <li><a onClick={() => {
+                        router("/meet/guest")
+                    }}>connect as Guest</a></li>
+    <li><a onClick={() => {
+                        router("/auth")
+                    }} >Register</a></li>
+    <li><a onClick={() => {
+                        router("/auth")
+                    }}>Login</a></li>
   </ul>
 </nav>
 <div className='row'>
