@@ -14,7 +14,7 @@ import ChatIcon from "@mui/icons-material/Chat";
 
 import io from "socket.io-client";
 import { useNavigate } from "react-router-dom";
-    const server_url="http://localhost:8080";
+    const server_url="https://meetingroombackend.onrender.com";
 
     const connections={
 
