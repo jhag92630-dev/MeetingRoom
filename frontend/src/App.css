@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.landingContainer{
+    width: 100vw;
+    height: 100vh;
+    background:url("https://wallpapers.com/images/hd/black-zoom-background-1920-x-1080-q125t9m0k5qrp07m.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: whitesmoke;
+    
+}
+
+.navbar {
+  position: sticky;   /* or fixed */
+  top: 0;             /* sticks to the top */
+  z-index: 1000;      /* stays above other elements */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  background-color: black;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* spacing between items */
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #ffd700; /* gold hover effect */
+}
+
+.row {
+      display: flex;
+      justify-content: space-between;
+      margin: 25px;
+      align-items: center;
+    }
+    .row div img{
+      margin-top: 70px;
+      margin-right: 70px;
+      height: 80vh;
+      width: auto;
+    }
+    .row div[role='button']{
+      background: #d97500;
+      width: fit-content;
+       border-radius: 5px;
+      text-decoration: none;
+    }
+    .row div[role='button'] a{
+      text-decoration: none;
+      color: whitesmoke;
+      font-size: 1.7rem;
+     
+    }
+
+    .navBar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-inline: 20px;
+    }
+    .meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+}
