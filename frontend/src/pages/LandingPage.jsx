@@ -1,9 +1,9 @@
 import React from 'react';
 import "../App.css"
 import { Link, useNavigate } from 'react-router-dom';
-const router = useNavigate();
+
 export default function landing(){
-    
+    const router = useNavigate();
     return(
         <div className='landingContainer'>
             <nav class="navbar">
